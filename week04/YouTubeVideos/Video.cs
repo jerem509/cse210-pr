@@ -15,12 +15,12 @@ public class Video
         _length = videoLength;
     }
 
-    public Video(string videoTitle, string videoAuthor, string videoLength, List<List<string>> ListOfComments)
+    public Video(string videoTitle, string videoAuthor, string videoLength, List<Comment> ListOfComments)
     {
         _title = videoTitle;
         _author = videoAuthor;
         _length = videoLength;
-        _comments = ListOfComments.Select(item => new Comment(item[0], item[1])).ToList();
+        _comments = ListOfComments;
     }
 
     private int GetCommentsQty () {
