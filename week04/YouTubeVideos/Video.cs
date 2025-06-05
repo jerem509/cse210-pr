@@ -31,7 +31,7 @@ public class Video
     {
         Console.WriteLine();
         Console.WriteLine("Video Information:");
-        Console.WriteLine($"\tTitle: {_title} - \n\tAuthor: {_author} - \n\tDuration: {_length}");
+        Console.WriteLine($"\tTitle: {_title}\n\tAuthor: {_author}\n\tDuration: {_length}");
         // Console.WriteLine();
         if (GetCommentsQty() > 0) {
             Console.WriteLine($"Comments ({GetCommentsQty()}):");

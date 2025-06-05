@@ -30,25 +30,15 @@ class Program
         };
         
 
-        List<List<object>> videoList = new List<List<object>> {
-            new List<object>
-            {
-               "Tout sur C#", "Charl Jonel", "10m:05s", commentsVideo1
-            },
-            new List<object>
-            {
-                "Tout sur Python", "Laks Akin", "50m:15s", commentsVideo2
-            },
-            new List<object>
-            {
-                "Tout autour", "Laks Akin", "08m:35s", commentsVideo3
-            }
+        List<Video> videoList = new List<Video> {
+            new Video("Tout sur C#", "Charl Jonel", "10m:05s", commentsVideo1),
+            new Video ("Tout sur Python", "Laks Akin", "50m:15s", commentsVideo2),
+            new Video ("Tout autour", "Laks Akin", "08m:35s", commentsVideo3)
         };
 
-        foreach (var item in videoList)
+        foreach (Video item in videoList)
         {
-            Video aVideo = new Video(item[0] as string, item[1] as string, item[2] as string, item[3] as List<List<string>>);
-            aVideo.DisplayVideoInfo();
+            item.DisplayVideoInfo();
         };
     }
 }
