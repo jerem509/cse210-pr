@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+
+public class Address {
+    private string _street ;
+    private string _city;
+    private string _stateOrProvince;
+    private string _country;
+
+    public Address (string street, string city, string stateOrProvince, string country) {
+        _street = street;
+        _city = city;
+        _stateOrProvince = stateOrProvince;
+        _country = country;
+    }
+
+    public bool IsCountryUSA () {
+        return _country == "USA";
+    }
+
+    public string DisplayAddress () {
+        return $"  {_street}\n  {_city}\n  {_stateOrProvince}, {_country}";
+    }
+}
