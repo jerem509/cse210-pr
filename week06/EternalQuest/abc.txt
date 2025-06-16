@@ -1,0 +1,4 @@
+50
+SimpleGoal|jouer;piano;10;True
+EternalGoal|scriptures;read everyday;10
+ChecklistGoal|type faster;typing lessons online everyday;25;10;2;2

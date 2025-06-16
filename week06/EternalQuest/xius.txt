@@ -1,0 +1,4 @@
+95
+SimpleGoal|allez en ville;prendre moto pour aller en ville;50;True
+EternalGoal|2;faith;10
+ChecklistGoal|3 lettres;a b c;15;5;3;3
